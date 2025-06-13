@@ -1,0 +1,63 @@
+version: '3.8' # Specify the Docker Compose file format version
+
+services:
+  # Zookeeper is required by Kafka for metadata management
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.5.0
+    hostname: zookeeper
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    volumes:
+      - zookeeper-data:/var/lib/zookeeper/data
+      - zookeeper-log:/var/lib/zookeeper/log
+
+  # Kafka Broker
+  kafka:
+    image: confluentinc/cp-kafka:7.5.0
+    hostname: kafka
+    container_name: kafka
+    ports:
+      - "9092:9092"
+      - "9093:9093"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT'
+      KAFKA_ADVERTISED_LISTENERS: 'PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092'
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+    volumes:
+      - kafka-data:/var/lib/kafka/data
+    depends_on:
+      - zookeeper
+
+  # SQL Server Database for Static Data Management
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest # Official Microsoft SQL Server image
+    hostname: sqlserver
+    container_name: sqlserver
+    ports:
+      - "1433:1433" #Expose SQL Server default port
+    environment:
+      # Required environment variables for SQL Server
+      ACCEPT_EULA: "Y" # Accept End-User License Agreement
+      SA_PASSWORD: "xxx" # Replace with a strong password for 'sa' user
+      MSSQL_PID: "Developer" # Use 'Developer' edition for development (free)
+    volumes:
+      - sqlserver-data:/var/opt/mssql # Persist SQL Server data
+    healthcheck: # Health check to ensure the DB is ready
+      test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "YourStrongPassword123!", "-Q", "SELECT 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  zookeeper-data:
+  zookeeper-log:
+  kafka-data:
+  sqlserver-data:
+    driver: local
