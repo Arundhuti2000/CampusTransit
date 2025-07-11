@@ -1,0 +1,57 @@
+service_id,date,exception_type,holiday_name
+SPRING2025-SOUTHWKD-Weekday-16-5-S49,20250703,1,
+BUS32025-hba35ns1-Weekday-02,20250704,2,Independence Day
+BUS32025-hbb35j47-Sunday-02,20250704,1,Independence Day
+BUS32025-hbb35ns1-Weekday-02,20250704,2,Independence Day
+BUS32025-hbc35j47-Sunday-02,20250704,1,Independence Day
+BUS32025-hbc35ns1-Weekday-02,20250704,2,Independence Day
+BUS32025-hbf35ns1-Weekday-02,20250704,2,Independence Day
+BUS32025-hbg35j47-Sunday-02,20250704,1,Independence Day
+BUS32025-hbg35ns1-Weekday-02,20250704,2,Independence Day
+BUS32025-hbl35j47-Sunday-02,20250704,1,Independence Day
+BUS32025-hbl35ns1-Weekday-02,20250704,2,Independence Day
+BUS32025-hbq35j47-Sunday-02,20250704,1,Independence Day
+BUS32025-hbq35ns1-Weekday-02,20250704,2,Independence Day
+BUS32025-hbs35j47-Sunday-02,20250704,1,Independence Day
+BUS32025-hbs35ns1-Weekday-02,20250704,2,Independence Day
+BUS32025-hbt35j47-Sunday-02,20250704,1,Independence Day
+BUS32025-hbt35ns1-Weekday-02,20250704,2,Independence Day
+Boat-EastBoston-Saturday-Summer-25,20250704,1,Independence Day
+Boat-EastBoston-Weekday-Summer-25,20250704,2,Independence Day
+Boat-F1-Saturday-Summer-25,20250704,1,Independence Day
+Boat-F1-WeekdayModified-Summer-25,20250704,2,Independence Day
+Boat-F4-Saturday-Summer-25,20250704,1,Independence Day
+Boat-F4-Weekday-Summer-25,20250704,2,Independence Day
+Boat-F6-Weekday-Summer-25,20250704,2,Independence Day
+Boat-F7-Weekday-Summer-25,20250704,2,Independence Day
+Boat-F8-Saturday-Summer-25,20250704,1,Independence Day
+Boat-Lynn-Saturday-Summer-25,20250704,1,Independence Day
+Boat-Lynn-Weekday-Summer-25,20250704,2,Independence Day
+IndependenceDay,20250704,1,Independence Day
+LRV32025-hlb35011-Weekday-01,20250704,2,Independence Day
+LRV32025-hlb35j41-Weekday-01,20250704,1,Independence Day
+LRV32025-hlm35011-Weekday-01,20250704,2,Independence Day
+LRV32025-hlm35j41-Weekday-01,20250704,1,Independence Day
+PRIV32025-hpp35j47-Sunday-01,20250704,1,Independence Day
+PRIV32025-hpp35ns1-Weekday-01,20250704,2,Independence Day
+RTL32025-amb35j41-Weekday-01,20250704,1,Independence Day
+RTL32025-hmb35011-Weekday-01,20250704,2,Independence Day
+RTL32025-hmo35011-Weekday-01,20250704,2,Independence Day
+RTL32025-hmo35j41-Weekday-01,20250704,1,Independence Day
+RTL32025-hms35011-Weekday-01,20250704,2,Independence Day
+RTL32025-hms35j41-Weekday-01,20250704,1,Independence Day
+SPRING2025-NORTHWKD-Weekday-22,20250704,2,Independence Day
+SPRING2025-NORTHWKD-Weekday-22-S6d,20250704,2,Independence Day
+SPRING2025-NORTHWKD-Weekday-22-S72,20250704,2,Independence Day
+SPRING2025-NORTHWKD-Weekday-22-S9f,20250704,2,Independence Day
+SPRING2025-SOUTHSS-Weekend-16-S4011ecb9,20250704,1,Independence Day
+SPRING2025-SOUTHWKD-Weekday-16-5-S49,20250704,2,Independence Day
+Spring/SummerWeekday,20250704,2,Independence Day
+RTL32025-hms35011-Weekday-01,20250710,2,
+RTL32025-hms35011-Weekday-01,20250711,2,
+RTL32025-hms35016-Saturday-01,20250712,2,
+RTL32025-hms35017-Sunday-01,20250713,2,
+RTL32025-hms35011-Weekday-01,20250717,2,
+RTL32025-hms35011-Weekday-01,20250718,2,
+RTL32025-hms35016-Saturday-01,20250719,2,
+RTL32025-hms35017-Sunday-01,20250720,2,
